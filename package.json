@@ -1,0 +1,26 @@
+{
+   "name": "dazeapi",
+   "version": "0.0.1",
+   "description": "Awesome project developed with TypeORM.",
+   "devDependencies": {
+      "@types/bcryptjs": "^2.4.1",
+      "@types/node": "^10.9.4",
+      "ts-node": "7.0.1",
+      "typescript": "3.0.3"
+   },
+   "dependencies": {
+      "@types/uuid": "^3.4.4",
+      "bcryptjs": "^2.4.3",
+      "graphql-import": "^0.7.0",
+      "graphql-yoga": "^1.16.2",
+      "guid-typescript": "^1.0.7",
+      "mysql": "^2.16.0",
+      "reflect-metadata": "^0.1.12",
+      "typeorm": "0.2.7",
+      "uuid": "^3.3.2"
+   },
+   "scripts": {
+      "start": "nodemon --exec ts-node src/dazeapi.ts",
+      "gen-schema-types": "gql2ts src/schema.graphql -o src/types/schema.d.ts"
+   }
+}

@@ -1,0 +1,24 @@
+{
+   "type": "mysql",
+   "host": "daze.cn2cpo7huhit.us-east-2.rds.amazonaws.com",
+   "port": 3306,
+   "username": "nabizi",
+   "password": "ncQfxCEU4kGyVc3P",
+   "database": "dazeDev",
+   "synchronize": true,
+   "logging": true,
+   "entities": [
+      "src/Model/**/*.ts"
+   ],
+   "migrations": [
+      "src/migration/**/*.ts"
+   ],
+   "subscribers": [
+      "src/subscriber/**/*.ts"
+   ],
+   "cli": {
+      "entitiesDir": "src/Model",
+      "migrationsDir": "src/migration",
+      "subscribersDir": "src/subscriber"
+   }
+}
